@@ -25,6 +25,11 @@ public class PropertyTest
         assertEquals("T3 Monte Belo", property1.getDescription());
         assertEquals(150000.0, property1.getPrice());
     }
+    @Test
+    public void testToString(){
+        assertEquals("Descrição : T3 Monte Belo\n" +
+                              "Preco     : 150000.0 Euros", property1.toString());
+    }
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
